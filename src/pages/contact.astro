@@ -34,11 +34,28 @@ import Layout from '../layouts/Brochure.astro';
 </Layout>
 
 <style>
-  input {
-    width: 100%;
+  input, textarea {
+    width: calc(100% - 2rem);
+    background-color: transparent;
+    border: 4px solid white;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 1.5rem;
+    color: white;
+    font-family: 'Azo Sans', sans-serif;
   }
   button {
     padding-inline: 2rem;
     padding-block: 1rem;
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 1.5rem;
+    color: white;
+    font-family: 'Azo Sans', sans-serif;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: var(--accent-dark);
+    cursor: pointer;
   }
 </style>
