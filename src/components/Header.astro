@@ -8,7 +8,7 @@ import logo from '../images/CEPHID-logo.png';
 
 <header>
   <nav>
-    <a href="/"><Image src={logo} alt="The Cephid logo" /></a>
+    <a href="/" class="logo-link"><Image src={logo} alt="The Cephid logo" /></a>
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
       <!-- <HeaderLink href="/blog">Blog</HeaderLink> -->
@@ -64,10 +64,10 @@ import logo from '../images/CEPHID-logo.png';
     border-bottom-color: var(--accent-dark);
   }
 
-nav .internal-links a.active:hover {
-  text-decoration: none;
-  border-bottom-color: var(--accent);
-}
+  nav .internal-links a.active:hover {
+    text-decoration: none;
+    border-bottom-color: var(--accent);
+  }
 
   nav img {
     height: 2rem;
@@ -86,6 +86,15 @@ nav .internal-links a.active:hover {
   @media (max-width: 720px) {
     .social-links {
       display: none;
+    }
+
+    .logo-link {
+      display: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
     }
   }
 </style>
