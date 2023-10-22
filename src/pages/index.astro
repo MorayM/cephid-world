@@ -6,7 +6,8 @@ import cover from '../images/cephid-1080-01.png';
 ---
 
 <Layout>
-  <Image src={cover} alt="The cover for Sparks in the Darkness by Cephid" />
+  <!-- Eager loading so as not to delay LCP -->
+  <Image src={cover} loading="eager" alt="The cover for Sparks in the Darkness by Cephid" />
   <p>
     Cephid is a new electronic and progressive music project. Their debut album <i>Sparks in the Darkness</i> will be released in early 2024. Find out more about the project <a href="/about">here</a>
   </p>
