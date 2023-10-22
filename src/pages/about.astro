@@ -1,62 +1,81 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Brochure.astro';
+
+import crystal from '../images/moray-crystal.png';
 ---
 
-<Layout
-  title="About Me"
-  description="Lorem ipsum dolor sit amet"
-  pubDate={new Date('August 08 2021')}
-  heroImage="/blog-placeholder-about.jpg"
->
+<Layout title='About' description='The themes and inspirations behind Cephid and Sparks in the Darkness' image="/moray-crystal-512.png">
+  <Image src={crystal} alt="Moray Macdonald, imprisoned in a glowing glass crystal" />
+  <h2>About Cephid</h2>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-    viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-    adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-    et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-    vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-    sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+    The culmination of many years of work, Cephid's debut album Sparks in the Darkness is an
+    expansive achievement. Inspired by our changing world and its uncertain futures, Sparks
+    in the Darkness lives in hope that a more sustainable world is still possible. Musically,
+    it is defined by a resistance to characterisation, instead expressing itself through
+    memorable melodies and complex structures, combined with deep, intense electronic textures.
+  </p>
+  <blockquote>
+    The afterimage of even the brightest spark will eventually fade
+  </blockquote>
+  <p>
+    Cephid was created by musician and composer <a href="https://moraymacdonald.com" target="_blank" rel="noreferrer">Moray Macdonald</a> as an opportunity to bring his
+    diverse influences together into a single coherent artistic statement. From his live work
+    with artists from across the modern progressive scene to his early love of experimental
+    electronic music, many musical facets are represented here.
   </p>
 
   <p>
-    Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-    tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-    blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-    porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-    massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-    Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-    bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-    massa massa ultricies mi.
+    Soaring melodic leads cut through spacious washes of synths, while propelled by layers of
+    sequencers, drums and percussion. Pulverising techno seamlessly gives way to complex progressive
+    workouts and moody, groove-driven soundscapes, all packed with lasting melodic hooks. The result
+    is a fresh, intriguing and engaging record unlike any other on any scene today.
+  </p>
+  <blockquote>
+    Sometimes a brighter light will overtake it
+  </blockquote>
+  <p>
+    Joining Moray on the album are drummers Emily Dolan Davies (Bryan Ferry, The Darkness,
+    Kim Wilde)and Graham Brown (The Paradox Twin, Grace and Fire, Cairo) who each bring their own
+    individual styles to different tracks. International metal vocalist and vocal coach Angel
+    Wolf-Black (Shewolf, Vivaldi Metal Project, solo) also provides memorable guest vocals. Bringing
+    all these elements together are Shelby Logan Warne (Kyros, Circuline) and Jerry Kandiah (Killing
+    Joke, The Futureheads) from Old Street Studios on mixing and mastering duties respectively. The
+    spectacular cover art is by Tiago Marinho (Muse).
+  </p>
+  <blockquote>
+    Did we burn bright enough? Did we catch the eye of heaven?
+  </blockquote>
+  <p>
+    Moray Macdonald is a musician and composer from Wiltshire. He made his name touring with
+    progressive rock and metal artists such as That Joe Payne, Godsticks, Kim Seviour and Ghost
+    Community. He has previously produced a plethora of releases under his own name across the broad
+    genre that is electronica, which can be found on <a href="https://moraymacdonald.bandcamp.com/" target="_blank" rel="noreferrer">BandCamp</a> and all streaming sites.
   </p>
 
+  <h3>For fans of</h3>
+  <p>Jean Michel Jarre, 65daysofstatic, Rival Consoles, Pink Floyd, Hybrid, Shineback, Frost*</p>
+
+  <h3>Track listing</h3>
+  <ol>
+    <li>To Catch the Eye of Heaven</li>
+    <li>Worlds Before (1st Spark)</li>
+    <li>Terminus</li>
+    <li>Of Promises Broken (2nd Spark)</li>
+    <li>Strobe</li>
+    <li>With Kindred Assistance</li>
+    <li>Dead Hand's Decree</li>
+    <li>The Old Me (3rd Spark)</li>
+  </ol>
+
+  <h3>Credits</h3>
+  <p>All tracks written and performed by Moray Macdonald</p>
   <p>
-    Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-    suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-    nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-    turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-    dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-    semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-    vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-    facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-    vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-    urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+    With Graham Brown - drums (tracks 3 & 7), Emily Dolan Davies - drums (tracks 4, 6 & 8),
+    Angel Wolf-Black - vocals (track 3)
   </p>
 
-  <p>
-    Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-    viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-    scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-    gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-    pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-    blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-    cursus metus aliquam eleifend mi.
-  </p>
-
-  <p>
-    Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-    nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-    tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-    ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-    proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-  </p>
+  <p>Mixed by Shelby Logan Warne and mastered by Jerry Kandiah at Old Street Studios</p>
+  <p>Produced by Moray Macdonald</p>
+  <p>Cover art by Tiago Marinho, Design by Alec Carmichael</p>
 </Layout>

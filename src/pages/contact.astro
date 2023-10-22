@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Brochure.astro';
+---
+
+<Layout title="Contact" description='Contact Cephid'>
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    action="/success"
+  >
+    <input type="hidden" name="form-name" value="contact" />
+    <div>
+      <div>
+        <p hidden>
+          <label for="botField">Do not fill this out: <input id="botField" name="bot-field" /></label>
+        </p>
+        <p>
+          <label for="name">Your Name: <input id="name" type="text" name="name" /></label>
+        </p>
+        <p>
+          <label for="email">Your Email: <input id="email" type="email" name="email" /></label>
+        </p>
+        <p>
+          <label for="message">Message: <textarea id="message" name="message" rows="5"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </div>
+    </div>
+  </form>
+</Layout>
+
+<style>
+  input {
+    width: 100%;
+  }
+  button {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+  }
+</style>
