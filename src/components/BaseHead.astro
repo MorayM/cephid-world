@@ -54,3 +54,13 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION, image = '/cover-512.
   //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
   mootrack('init', 'b6ddd86d-0bea-46b1-84a7-62ff7b7ab529');
 </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2D1B9GW7WN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2D1B9GW7WN');
+</script>
