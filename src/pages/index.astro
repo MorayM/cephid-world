@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Brochure.astro';
 
 import cover from '../images/cephid-1080-01.png';
+import MailchimpSignup from '../components/MailchimpSignup.astro';
 ---
 
 <Layout>
@@ -12,6 +13,5 @@ import cover from '../images/cephid-1080-01.png';
     Cephid is a new electronic and progressive music project. Their debut album <i>Sparks in the Darkness</i> will be released in early 2024. Find out more about the project <a href="/about">here</a>
   </p>
   <p>Subscribe to the mailing list for more news, or follow the project on social media!</p>
-  <h2>Mailing list</h2>
-  <div data-mooform-id="d8523066-9a96-405a-9161-d9c25af29c86" ></div>
+  <MailchimpSignup />
 </Layout>
