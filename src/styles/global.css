@@ -231,7 +231,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-dark);
+  color: var(--accent);
 }
 
 p {
