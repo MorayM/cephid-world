@@ -1,5 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
+import Icon from 'astro-icon';
+
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -68,6 +70,16 @@ const posts = (await getCollection('blog')).sort(
       ul a:hover img {
         box-shadow: var(--box-shadow);
       }
+      .rss-link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .rss-link a {
+        display: flex;
+        align-items: center;
+      }
       @media (max-width: 720px) {
         ul {
           gap: 0.5em;
@@ -104,6 +116,7 @@ const posts = (await getCollection('blog')).sort(
             ))
           }
         </ul>
+        <p class="rss-link"><a href="/rss.xml"><Icon name="mdi:rss-box" width="32" height="32" />RSS</a></p>
       </section>
     </main>
     <Footer />
