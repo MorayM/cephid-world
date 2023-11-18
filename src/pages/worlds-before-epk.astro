@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Brochure.astro';
+
+import wb from '../images/wb-cover-1080.png';
+---
+
+<Layout title='Worlds Before' description='Press Kit for Worlds Before' image="/wb-cover-1080.png">
+  <Image src={wb} alt="The cover of the Worlds Before single" />
+  <h2>About Worlds Before</h2>
+  <p>
+    The lead single from Cephid's upcoming album "Sparks in the Darkness",
+    "Worlds Before" sets out a manifesto for the rest of the album. Inspired by the endless drive
+    for progress that characterises modern society, this track evokes a world racing ever faster
+    towards a dark, unknown destination. Visceral melodic leads cut through spacious washes of
+    synths, while propelled by layers of techno and trance-inspired sequencers, drums and
+    percussion. An accompanying short film will be released on 27th November, at the same time as
+    the full track is released on streaming services.
+  </p>
+  <p>Pre-save Worlds Before <a href="https://distrokid.com/hyperfollow/cephid/worlds-before-1st-spark" target="_blank" rel="noreferrer">here</a></p>
+  <iframe width="720" height="405" src="https://www.youtube.com/embed/LPW0VhM-ryU?si=zz97jOlqe29QFLja&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</Layout>
