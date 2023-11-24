@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Brochure.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+
+import logo from '../images/CEPHID-logo.png';
+import MailchimpSignup from '../components/MailchimpSignup.astro';
+---
+
+<Layout>
+    <!-- Eager loading so as not to delay LCP -->
+    <Image src={logo} loading="eager" alt="The Cephid logo" />
+  <h1>Thank you!</h1>
+  <p>Thank you for picking up a card! Listen to the latest single on Spotify <a href="https://distrokid.com/hyperfollow/cephid/worlds-before-1st-spark" target="_blank" rel="noreferrer">here</a>. Subscribe to the mailing list for more news or follow on social media at the links below.</p>
+  <div class="social-links">
+    <SocialLinks size={48} />
+  </div>
+  <MailchimpSignup />
+  <iframe width="720" height="405" src="https://www.youtube.com/embed/gsKJTB_8ga0?si=jTjpqQ416_IjV15w&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</Layout>
+<style>
+  iframe {
+    margin-block: 1rem;
+  }
+  .social-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-block: 1rem;
+  }
+</style>
