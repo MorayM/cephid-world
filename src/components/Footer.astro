@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon';
+import SocialLinks from './SocialLinks.astro';
 
 const today = new Date();
 // height = 70px = 3.5rem;
@@ -8,18 +8,7 @@ const today = new Date();
 <footer>
   <span>&copy; {today.getFullYear()} Moray Macdonald. All rights reserved.</span>
   <div class="social-links">
-    <a href="https://mastodonmusic.social/@cephid" target="_blank">
-      <span class="sr-only">Follow Cephid on Mastodon</span>
-      <Icon name="mdi:mastodon" width="20" height="20" />
-    </a>
-    <a href="https://instagram.com/cephid.world" target="_blank">
-      <span class="sr-only">Follow Cephid on Instagram</span>
-      <Icon name="mdi:instagram" width="20" height="20" />
-    </a>
-    <a href="https://facebook.com/cephid.world" target="_blank">
-      <span class="sr-only">Follow Cephid on Facebook</span>
-      <Icon name="mdi:facebook" width="20" height="20" />
-    </a>
+    <SocialLinks />
   </div>
 </footer>
 <style>
