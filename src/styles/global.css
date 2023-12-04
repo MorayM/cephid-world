@@ -291,6 +291,10 @@ hr {
   border-top: 1px solid rgb(var(--gray-light));
 }
 
+iframe {
+  width: 100%;
+}
+
 .scrollable {
   height: calc(100vh - 3.5rem);
   overflow: scroll;
