@@ -2,7 +2,7 @@
   "name": "cephid-world",
   "type": "module",
   "version": "0.0.1",
-  "engines":{
+  "engines": {
     "node": "20.11.0"
   },
   "scripts": {
@@ -14,9 +14,9 @@
     "lint": "eslint --ext .js,.ts,.astro src"
   },
   "dependencies": {
-    "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^3.0.1",
-    "astro": "^3.3.0",
+    "@astrojs/rss": "^4.0.4",
+    "@astrojs/sitemap": "^3.0.5",
+    "astro": "^4.2.6",
     "astro-icon": "^0.8.1",
     "sharp": "^0.32.6"
   },
