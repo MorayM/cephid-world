@@ -8,15 +8,15 @@ import logo from '../images/CEPHID-logo.png';
 
 <header>
   <nav>
-    <a href="/" class="logo-link"><Image src={logo} alt="The Cephid logo" /></a>
+    <a href="/" class="logo-link tablet-hide"><Image src={logo} alt="The Cephid logo" /></a>
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/#mailingList">Mailing List</HeaderLink>
+      <!-- <HeaderLink href="/#mailingList">Mailing List</HeaderLink> -->
       <!-- <HeaderLink href="/blog">Blog</HeaderLink> -->
       <HeaderLink href="/about">About</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
     </div>
-    <div class="social-links">
+    <div class="social-links phone-hide">
     <SocialLinks />
     </div>
   </nav>
@@ -74,6 +74,9 @@ import logo from '../images/CEPHID-logo.png';
   }
 
   @media (max-width: 940px) {
+    .tablet-hide {
+      display: none;
+    }
     .logo-link {
       display: none;
     }
@@ -83,11 +86,7 @@ import logo from '../images/CEPHID-logo.png';
   }
 
   @media (max-width: 780px) {
-    .social-links {
-      display: none;
-    }
-
-    .logo-link {
+    .tablet-hide, .phone-hide {
       display: none;
     }
 
