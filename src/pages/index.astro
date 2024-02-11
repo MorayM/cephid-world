@@ -4,12 +4,12 @@ import Layout from '../layouts/Brochure.astro';
 
 import cover from '../images/cephid-1080-01.png';
 import MailchimpSignup from '../components/MailchimpSignup.astro';
-import PreorderBanner from '../components/PreorderBanner.astro';
+import OrderBanner from '../components/OrderBanner.astro';
+import TerminusVideo from '../components/videos/Terminus.astro';
+import WorldsBeforeVideo from '../components/videos/WorldsBefore.astro';
 ---
 
 <Layout>
-  <iframe width="720" height="405" src="https://www.youtube.com/embed/5Y-Dpq7dWYU?si=ddpZCCaV8nJT6Afp&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <PreorderBanner />
   <!-- Eager loading so as not to delay LCP -->
   <Image
     src={cover}
@@ -17,10 +17,12 @@ import PreorderBanner from '../components/PreorderBanner.astro';
     alt="The cover for Sparks in the Darkness by Cephid"
     width={800}
   />
+  <OrderBanner />
   <p>
-    Cephid is a new electronic and progressive music project. Their debut album <i>Sparks in the Darkness</i> will be released in early 2024. Find out more about the project <a href="/about">here</a>
+    Cephid is a new electronic and progressive music project. Their debut album <i>Sparks in the Darkness</i> will be released in early 2024. Find out more about the project <a href="/about">here.</a>
   </p>
   <p>Subscribe to the mailing list for more news, or follow the project on social media!</p>
   <MailchimpSignup />
-  <iframe width="720" height="405" src="https://www.youtube.com/embed/175-QCVgv5I?si=4BJwuUdr141AAKjn&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <WorldsBeforeVideo />
+  <TerminusVideo />
 </Layout>

@@ -2,8 +2,9 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Brochure.astro';
 
+import cover from '../images/cephid-1080-01.png';
 import crystal from '../images/moray-crystal.png';
-import PreorderBanner from '../components/PreorderBanner.astro';
+import PreorderBanner from '../components/OrderBanner.astro';
 ---
 
 <Layout title='About' description='The themes and inspirations behind Cephid and Sparks in the Darkness' image="/moray-crystal-512.png">
@@ -81,4 +82,9 @@ import PreorderBanner from '../components/PreorderBanner.astro';
   <p>Produced by Moray Macdonald</p>
   <p>Cover art by Tiago Marinho, Design by Alec Carmichael</p>
   <PreorderBanner />
+  <Image
+    src={cover}
+    alt="The cover for Sparks in the Darkness by Cephid"
+    width={800}
+  />
 </Layout>

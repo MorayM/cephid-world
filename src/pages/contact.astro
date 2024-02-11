@@ -1,9 +1,10 @@
 ---
-import PreorderBanner from '../components/PreorderBanner.astro';
+import MailchimpSignup from '../components/MailchimpSignup.astro';
 import Layout from '../layouts/Brochure.astro';
 ---
 
 <Layout title="Contact" description='Contact Cephid'>
+  <h1>Contact Cephid</h1>
   <form
     name="contact"
     method="POST"
@@ -32,7 +33,8 @@ import Layout from '../layouts/Brochure.astro';
       </div>
     </div>
   </form>
-  <PreorderBanner />
+
+  <MailchimpSignup />
 </Layout>
 
 <style>
