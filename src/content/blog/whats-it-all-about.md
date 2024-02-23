@@ -1,13 +1,13 @@
 ---
 title: 'So what''s it all about?'
 description: 'A little bit about the musical and thematic inspirations for Cephid and Sparks in the Darkness'
-pubDate: 'Nov 05 2023'
-heroImage: '/blog-placeholder-3.jpg'
+pubDate: 'Feb 23 2024'
+heroImage: '/moray-crystal-16-9.png'
 ---
 
-Welcome to the Cephid blog! This blog (along with my mailing list) is going to the first stop for all news about Cephid, and also home to a few longer-form pieces about the how, why, what and where of Cephid. Mostly because sometimes I just want to read something instead of having to watch a vlog! So to kick things off, I thought I'd write a bit about the "what", namely what I want Cephid to be.
+Welcome to the Cephid blog! This blog (along with my mailing list) is going to the first stop for all news about Cephid, and also home to a few longer-form pieces about the how, why, what and where of Cephid. And mostly because sometimes I just want to read something instead of having to watch a vlog! So to kick things off, I thought I'd write a bit about the "what", namely what I want Cephid to be.
 
-Everything about Cephid comes back to my love of all kinds of electronic music. From my first exposure to the really classic stuff like Jean Michel Jarre and Vangelis, right up to the modern day. Despite this love, I've always been a little dissatisfied with a lot of the electronic music that I listen to, and when I decided that Cephid was going to be "a thing", I came up with two objectives for all the music that would be released under this name.
+Everything about Cephid comes back to my love of all kinds of electronic music. From my first exposure to the really classic stuff like Jean Michel Jarre and Vangelis, right up to the modern day. Despite this, I've always been a little dissatisfied with a lot of the electronic music that I listen to, and when I decided that Cephid was going to be "a thing", I came up with two objectives for all the music that would be released under this name.
 
 Firstly, I want to make music that uses forms and structures that aren't necessarily associated with modern electronic music. I wanted to surprise the listener wherever possible, so they're never sure quite where the music will go next. A lot of this was inspired by classical music, but also from progressive rock - my other love!
 
