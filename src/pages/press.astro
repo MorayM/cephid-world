@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Brochure.astro';
+
+import cover from '../images/sitd-cover.png';
+import OrderBanner from '../components/OrderBanner.astro';
+---
+
+<Layout title='Press quotes' description='Press quotes about Cephid and Sparks in the Darkness' image="/cover-512.png">
+  <h2>Press quotes</h2>
+  <h3>Orchestral Manoeuvres in the Dark</h3>
+  <blockquote>
+    Really enjoyed listening to the debut release from Cephid. Great synth sounds and a really
+    good video. An artist to watch! - Andy
+  </blockquote>
+  <h3>Prog Magazine</h3>
+  <blockquote>
+    This is Jarre 2.0 stuff - gleaming synth lines and infectious beats beaming in from the
+    intelligent end of the electro world... great stuff
+  </blockquote>
+  <h3>The Prog Mind</h3>
+  <blockquote>
+    [T]he sheer rhythmic and grooving power of this album is so much fun. You need to hear it.
+  </blockquote>
+  <h3>Devizine</h3>
+  <blockquote>
+    It has the concept album quality in which you must indulge in it completely... it flows in one
+    radical and unique package, impossible to pigeonhole... it’s too groundbreaking to be ignored.
+  </blockquote>
+  <OrderBanner />
+  <Image
+    src={cover}
+    alt="The cover for Sparks in the Darkness by Cephid"
+    width={800}
+  />
+</Layout>
