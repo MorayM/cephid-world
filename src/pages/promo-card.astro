@@ -9,6 +9,7 @@ import SpotifyEmbedCompact from '../components/SpotifyEmbedCompact.astro';
 import Terminus from '../components/videos/Terminus.astro';
 import WorldsBefore from '../components/videos/WorldsBefore.astro';
 import { BANDCAMP_ALBUM_LINK } from '../consts';
+import KleptocracyEmbedCompact from '../components/KleptocracyEmbedCompact.astro';
 ---
 
 <Layout>
@@ -16,11 +17,15 @@ import { BANDCAMP_ALBUM_LINK } from '../consts';
   <Image src={logo} loading="eager" alt="The Cephid logo" />
   <h1>Thank you!</h1>
   <p>
-    Thank you for picking up a card! You can order the album on CD or as a download on
+    Thank you for picking up a card! You can order Sparks in the Darkness on CD or as a download on
     <a href={BANDCAMP_ALBUM_LINK}>Bandcamp</a>. Alternatively, you can find it on your favourite
     streaming service.
   </p>
   <SpotifyEmbedCompact />
+  <p>
+    You can also find my remix of Orchestral Manoeuvres in the Dark on streaming services everywhere.
+  </p>
+  <KleptocracyEmbedCompact />
   <p>
     Subscribe to the mailing list to keep up to date with the latest news or follow Cephid on
     social media at the links below.
@@ -33,6 +38,9 @@ import { BANDCAMP_ALBUM_LINK } from '../consts';
   <Terminus />
 </Layout>
 <style>
+  main {
+    overflow-y: visible;
+  }
   iframe {
     margin-block: 1rem;
   }
