@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Brochure.astro';
+
+import cover from '../images/sitd-cover.png';
+import OrderBanner from '../components/OrderBanner.astro';
+---
+
+<Layout title='Live' description='Details of upcoming live shows' image="/cover-512.png">
+  <h2>Live</h2>
+  <p>What are you doing here? There's nothing for you here!</p>
+  <OrderBanner />
+  <Image
+    src={cover}
+    alt="The cover for Sparks in the Darkness by Cephid"
+    width={800}
+  />
+</Layout>
