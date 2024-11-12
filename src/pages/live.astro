@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Brochure.astro';
+import shows from '../data/live.json';
 
 import cover from '../images/sitd-cover.png';
 import OrderBanner from '../components/OrderBanner.astro';
@@ -8,7 +9,15 @@ import OrderBanner from '../components/OrderBanner.astro';
 
 <Layout title='Live' description='Details of upcoming live shows' image="/cover-512.png">
   <h2>Live</h2>
-  <p>What are you doing here? There's nothing for you here!</p>
+  <section class="show-list">
+    {shows.map((show) => (
+      <div class="show-item">
+        <span class="show-location">{show.location}</span>
+        <span class="ticket-link"><a href={show.url}>Tickets</a></span>
+        <span class="show-date">{new Date(show.date).toLocaleDateString()} {show.time}</span>
+      </div>
+    ))}
+  </section>
   <OrderBanner />
   <Image
     src={cover}
@@ -16,3 +25,27 @@ import OrderBanner from '../components/OrderBanner.astro';
     width={800}
   />
 </Layout>
+
+<style>
+  .show-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .show-item {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    grid-template-columns: 75% 25%;
+    border-radius: 10px;
+  }
+
+  .show-date,
+  .show-location,
+  .ticket-link {
+    align-self: center;
+  }
+</style>
