@@ -38,7 +38,7 @@ import logo from '../images/CEPHID-logo.png';
     justify-content: space-between;
   }
   nav .internal-links a {
-    padding-inline: 1rem;
+    padding-inline: 0.8rem;
     padding-block-start: 1rem;
     padding-block-end: 0.8rem;
     color: var(--black);
@@ -95,6 +95,15 @@ import logo from '../images/CEPHID-logo.png';
     header {
       display: flex;
       justify-content: center;
+    }
+    nav .internal-links a {
+      padding-inline: 0.5rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    nav .internal-links a {
+      padding-inline: 0.5rem;
     }
   }
 </style>
