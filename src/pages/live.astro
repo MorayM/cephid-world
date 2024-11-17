@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Brochure.astro';
+import shows from '../data/live.json';
 
 import cover from '../images/sitd-cover.png';
 import OrderBanner from '../components/OrderBanner.astro';
@@ -8,7 +9,17 @@ import OrderBanner from '../components/OrderBanner.astro';
 
 <Layout title='Live' description='Details of upcoming live shows' image="/cover-512.png">
   <h2>Live</h2>
-  <p>What are you doing here? There's nothing for you here!</p>
+  <section class="show-list">
+    {shows.map((show) => (
+      <div class="show-item">
+        <h4 class="show-location">{show.location}</h4>
+        <div>
+          <span class="show-date">{new Date(show.date).toLocaleDateString()} {show.time}</span>
+          <span class="ticket-link"><a href={show.url}>Tickets</a></span>
+        </div>
+      </div>
+    ))}
+  </section>
   <OrderBanner />
   <Image
     src={cover}
@@ -16,3 +27,27 @@ import OrderBanner from '../components/OrderBanner.astro';
     width={800}
   />
 </Layout>
+
+<style>
+  .show-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .show-item {
+    padding: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .show-item h4 {
+    margin: 0;
+    line-height: 1em;
+  }
+  .show-item div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1em;
+    margin-top: 0.5em;
+  }
+</style>
