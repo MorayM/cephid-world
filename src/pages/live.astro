@@ -3,8 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Brochure.astro';
 import shows from '../data/live.json';
 
-import cover from '../images/sitd-cover.png';
-import OrderBanner from '../components/OrderBanner.astro';
+import poster from '../images/live-2025-rondo.png';
 ---
 
 <Layout title='Live' description='Details of upcoming live shows' image="/cover-512.png">
@@ -20,10 +19,9 @@ import OrderBanner from '../components/OrderBanner.astro';
       </div>
     ))}
   </section>
-  <OrderBanner />
   <Image
-    src={cover}
-    alt="The cover for Sparks in the Darkness by Cephid"
+    src={poster}
+    alt="A poster for the Cephid Live Show at the Rondo Theatre on 8th February 2025"
     width={800}
   />
 </Layout>
