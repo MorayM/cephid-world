@@ -4,6 +4,7 @@ import Layout from '../layouts/Brochure.astro';
 import shows from '../data/live.json';
 
 import poster from '../images/live-2025-rondo.png';
+import rondo from '../images/cephid_live_harp.png';
 
 const upcomingShows = shows.filter((show) => new Date(show.date) >= new Date());
 const pastShows = shows.filter((show) => new Date(show.date) < new Date());
@@ -11,9 +12,16 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date());
 
 <Layout title='Live' description='Details of upcoming live shows' image="/cover-512.png">
   <h2>Live</h2>
-  {!upcomingShows.length && <p>
-    No upcoming shows at the moment. Know a venue, festival or support slot? <a href="/contact">Get in touch!</a>
-  </p>}
+  {!upcomingShows.length && <>
+    <p>
+      No upcoming shows at the moment. Know a venue, festival or support slot? <a href="/contact">Get in touch!</a>
+    </p>
+    <Image
+      src={rondo}
+      alt="Moray Macdonald plays keyboards on the left of the stage with Graham Brown on electronic drums on the right. The Laser Harp is in between them, glowing green."
+      title="Cephid Live at the Rondo Theatre. Photo by Grace Hayhurst"
+    />
+  </>}
   {!!upcomingShows.length && <section class="show-list">
     {upcomingShows.map((show) => (
       <div class="show-item">
