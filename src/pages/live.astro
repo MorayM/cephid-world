@@ -4,12 +4,31 @@ import Layout from '../layouts/Brochure.astro';
 import shows from '../data/live.json';
 
 import poster from '../images/live-2025-rondo.png';
+
+const upcomingShows = shows.filter((show) => new Date(show.date) >= new Date());
+const pastShows = shows.filter((show) => new Date(show.date) < new Date());
 ---
 
 <Layout title='Live' description='Details of upcoming live shows' image="/cover-512.png">
   <h2>Live</h2>
+  {!upcomingShows.length && <p>
+    No upcoming shows at the moment. Know a venue, festival or support slot? <a href="/contact">Get in touch!</a>
+  </p>}
+  {!!upcomingShows.length && <section class="show-list">
+    {upcomingShows.map((show) => (
+      <div class="show-item">
+        <h4 class="show-location">{show.location}</h4>
+        <div>
+          <span class="show-date">{new Date(show.date).toDateString()} {show.time}</span>
+          <span class="ticket-link"><a href={show.url}>Tickets</a></span>
+        </div>
+      </div>
+    ))}
+  </section>
+  }
+  <h3>Past Shows</h3>
   <section class="show-list">
-    {shows.map((show) => (
+    {pastShows.map((show) => (
       <div class="show-item">
         <h4 class="show-location">{show.location}</h4>
         <div>
