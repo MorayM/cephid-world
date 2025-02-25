@@ -16,6 +16,7 @@ import logo from '../images/CEPHID-logo.png';
       <HeaderLink href="/blog">Blog</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
+      <HeaderLink href="https://cephid.bandcamp.com">Merch</HeaderLink>
     </div>
     <div class="social-links phone-hide">
     <SocialLinks />
@@ -37,11 +38,16 @@ import logo from '../images/CEPHID-logo.png';
     align-items: center;
     justify-content: space-between;
   }
+  nav   .internal-links {
+    display: flex;
+    gap: 0;
+  }
   nav .internal-links a {
     padding-inline: 0.8rem;
     padding-block-start: 1rem;
     padding-block-end: 0.8rem;
     color: var(--black);
+    border-top: 0.2rem solid transparent;
     border-bottom: 0.2rem solid transparent;
     text-decoration: none;
   }
