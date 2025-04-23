@@ -27,7 +27,7 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date());
       <div class="show-item">
         <h4 class="show-location">{show.location}</h4>
         <div>
-          <span class="show-date">{new Date(show.date).toDateString()} {show.time}</span>
+          <span class="show-date">{new Date(show.date).toLocaleDateString()} {show.time}</span>
           <span class="ticket-link"><a href={show.url}>Tickets</a></span>
         </div>
       </div>
@@ -40,8 +40,7 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date());
       <div class="show-item">
         <h4 class="show-location">{show.location}</h4>
         <div>
-          <span class="show-date">{new Date(show.date).toDateString()} {show.time}</span>
-          <span class="ticket-link"><a href={show.url}>Tickets</a></span>
+          <span class="show-date">{new Date(show.date).toLocaleDateString()} {show.time}</span>
         </div>
       </div>
     ))}
@@ -61,7 +60,7 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date());
   .show-item {
     padding: 16px;
     border: 1px solid #ccc;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     border-radius: 8px;
   }
 
