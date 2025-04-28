@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Brochure.astro';
+
+import rondoHarp from '../images/rondo-harp-1.jpg';
+import TheOldMeLive from '../components/videos/TheOldMeLive.astro';
+---
+
+<Layout title='Cephid - The Laser Harp' description='A new electronic and progressive music project, featuring a Laser Harp live on stage.'>
+  <Image
+    src={rondoHarp}
+    loading="eager"
+    alt="Moray playing the Laser Harp on stage at the Rondo Theatre in 2025"
+    width={800}
+  />
+  <p>
+    The Laser Harp is a spectacular instrument that has become a signature of Cephid's live
+    performances. Originally built by Moray when he was a teenager inspired by bootlegs of
+    Jean-Michel Jarre's concerts, it had never been used in a live setting until the Debut
+    Cephid concert in 2025.
+  </p>
+  <p>
+    While none of the music on Sparks in the Darkness was written with the Laser Harp in mind,
+    it fits so well into The Old Me that it's hard to imagine the piece without it. Its striking
+    visual presence provides a stunning focal point for the finale of the show.
+  </p>
+  <TheOldMeLive />
+  <p>
+    Moray's Laser Harp is a MIDI controller that uses lasers and sensors in the top of the frame
+    to detect the position of the player's hands. While it can be used to control a wide range of
+    sounds and effects, Moray normally uses it in conjuction with a custom patch on the ASM
+    Hydrasynth. The strings are tuned to A3, Bb3, C4, D4, E4, F4, F#4, G4 and A4, allowing Moray
+    to play melodies in A minor, A dorian and A phrygian.
+  </p>
+  <p>
+    The harp is collapsible so that it can be transported relatively easily and set up in as many
+    venues as possible. It complies with BS EN 60825-1:2014, the standard for laser product safety,
+    and Moray is continually working on improvements to both the visual and musical aspects of the
+    instrument. As well as performances specifically focused on the harp, Moray is also looking at
+    opportunities to use it for workshops and as an art installation. For more information,
+    <a href="contact">please get in touch</a>.
+  </p>
+</Layout>
