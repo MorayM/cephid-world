@@ -28,7 +28,7 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date());
         <h4 class="show-location">{show.location}</h4>
         <div>
           <span class="show-date">{new Date(show.date).toLocaleDateString()} {show.time}</span>
-          <span class="ticket-link"><a href={show.url}>Tickets</a></span>
+          {show.url && <span class="ticket-link"><a href={show.url}>Tickets</a></span>}
         </div>
       </div>
     ))}
