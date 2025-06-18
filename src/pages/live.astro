@@ -14,7 +14,7 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date());
   <h2>Live</h2>
   {!upcomingShows.length && <>
     <p>
-      No upcoming shows at the moment. Know a venue, festival or support slot? <a href="/contact">Get in touch!</a>
+      No upcoming shows at the moment. Know a venue, festival or support slot where you'd like to see Cephid? <a href="/contact">Get in touch!</a>
     </p>
     <Image
       src={rondo}
@@ -45,6 +45,10 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date());
       </div>
     ))}
   </section>
+  <h3>Bookings</h3>
+  <p>
+    If you're interested in booking Cephid for a show, please <a href="/contact">get in touch</a>. Full information for promoters and venue technicians can be found <a href="/for-promoters">here</a>.
+  </p>
   <Image
     src={poster}
     alt="A poster for the Cephid Live Show at the Rondo Theatre on 8th February 2025"
