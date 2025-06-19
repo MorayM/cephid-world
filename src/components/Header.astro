@@ -1,8 +1,8 @@
 ---
-import { Image } from 'astro:assets';
-import SocialLinks from './SocialLinks.astro';
-import HeaderLink from './HeaderLink.astro';
-import logo from '../images/CEPHID-logo.png';
+import { Image } from 'astro:assets'
+import SocialLinks from './SocialLinks.astro'
+import HeaderLink from './HeaderLink.astro'
+import logo from '../images/CEPHID-logo.png'
 // height = 70px = 3.5rem;
 ---
 
@@ -49,26 +49,26 @@ import logo from '../images/CEPHID-logo.png';
 
 <script>
   // Mobile menu toggle functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-menu');
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger')
+    const mobileMenu = document.querySelector('.mobile-menu')
 
     if (hamburger && mobileMenu) {
       // Toggle menu
-      hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-      });
+      hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('active')
+        mobileMenu.classList.toggle('active')
+      })
 
       // Close menu when clicking on a link
-      mobileMenu.addEventListener('click', function(e) {
+      mobileMenu.addEventListener('click', function (e) {
         if (e.target && (e.target as HTMLElement).tagName === 'A') {
-          hamburger.classList.remove('active');
-          mobileMenu.classList.remove('active');
+          hamburger.classList.remove('active')
+          mobileMenu.classList.remove('active')
         }
-      });
+      })
     }
-  });
+  })
 </script>
 
 <style>

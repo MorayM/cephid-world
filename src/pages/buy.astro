@@ -1,10 +1,14 @@
 ---
-import { Image } from 'astro:assets';
-import Layout from '../layouts/Brochure.astro';
-import glamour from '../images/sitd_vinyl_glam.jpg';
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Brochure.astro'
+import glamour from '../images/sitd_vinyl_glam.jpg'
 ---
 
-<Layout title='Merch' description='Cephid merch. Where to buy the album, t-shirts, and more.' image="/moray-crystal-512.png">
+<Layout
+  title="Merch"
+  description="Cephid merch. Where to buy the album, t-shirts, and more."
+  image="/moray-crystal-512.png"
+>
   <h2>Merch</h2>
   <p>
     Sparks in the Darkness is available on both CD and hand-numbered red vinyl, and we have some
@@ -18,15 +22,25 @@ import glamour from '../images/sitd_vinyl_glam.jpg';
   </p>
   <ul>
     <li>
-      <a href="https://www.facebook.com/resolutionrecordsshop/" target="_blank" rel="noreferrer">Resolution Records</a> &mdash; Green Park Station, Bath
+      <a href="https://www.facebook.com/resolutionrecordsshop/" target="_blank" rel="noreferrer"
+        >Resolution Records</a
+      > &mdash; Green Park Station, Bath
     </li>
     <li>
-      <a href="https://www.sound-knowledge.co.uk/" target="_blank" rel="noreferrer">Sound Knowledge</a> &mdash; Hughenden Yard, Marlborough. Also has CD copies in stock!
+      <a href="https://www.sound-knowledge.co.uk/" target="_blank" rel="noreferrer"
+        >Sound Knowledge</a
+      > &mdash; Hughenden Yard, Marlborough. Also has CD copies in stock!
     </li>
   </ul>
   <h3>Bandcamp</h3>
   <p>
-    I'm also selling the album and t-shirts on <a href="https://cephid.bandcamp.com" target="_blank" rel="noreferrer">Bandcamp</a>, with bundle deals available and worldwide shipping.
-  <p>
-  <Image src={glamour} alt="Sparks in the Darkness red vinyl" />
-</Layout>
+    I'm also selling the album and t-shirts on <a
+      href="https://cephid.bandcamp.com"
+      target="_blank"
+      rel="noreferrer">Bandcamp</a
+    >, with bundle deals available and worldwide shipping.
+    <p>
+      <Image src={glamour} alt="Sparks in the Darkness red vinyl" />
+    </p>
+  </p></Layout
+>

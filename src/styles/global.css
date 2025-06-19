@@ -12,18 +12,21 @@
   --gray-light: 229, 233, 240;
   --gray-dark: 34, 41, 57;
   --gray-gradient: rgba(var(--gray-light), 50%), #fff;
-  --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+  --box-shadow:
+    0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
     0 16px 32px rgba(var(--gray), 33%);
 }
 
 @font-face {
   font-family: 'Azo Sans';
   src: url('/fonts/azo-sans/AzoSans-BoldItalic.eot');
-  src: local('Azo Sans Bold Italic'), local('AzoSans-BoldItalic'),
-      url('/fonts/azo-sans/AzoSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-BoldItalic.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-BoldItalic.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-BoldItalic.ttf') format('truetype');
+  src:
+    local('Azo Sans Bold Italic'),
+    local('AzoSans-BoldItalic'),
+    url('/fonts/azo-sans/AzoSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-BoldItalic.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-BoldItalic.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -32,11 +35,13 @@
 @font-face {
   font-family: 'Azo Sans Tn';
   src: url('/fonts/azo-sans/AzoSans-Thin.eot');
-  src: local('Azo Sans Thin'), local('AzoSans-Thin'),
-      url('/fonts/azo-sans/AzoSans-Thin.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-Thin.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-Thin.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-Thin.ttf') format('truetype');
+  src:
+    local('Azo Sans Thin'),
+    local('AzoSans-Thin'),
+    url('/fonts/azo-sans/AzoSans-Thin.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-Thin.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-Thin.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -45,11 +50,13 @@
 @font-face {
   font-family: 'Azo Sans Lt';
   src: url('/fonts/azo-sans/AzoSans-LightItalic.eot');
-  src: local('Azo Sans Light Italic'), local('AzoSans-LightItalic'),
-      url('/fonts/azo-sans/AzoSans-LightItalic.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-LightItalic.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-LightItalic.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-LightItalic.ttf') format('truetype');
+  src:
+    local('Azo Sans Light Italic'),
+    local('AzoSans-LightItalic'),
+    url('/fonts/azo-sans/AzoSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-LightItalic.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-LightItalic.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -58,11 +65,13 @@
 @font-face {
   font-family: 'Azo Sans Tn';
   src: url('/fonts/azo-sans/AzoSans-ThinItalic.eot');
-  src: local('Azo Sans Thin Italic'), local('AzoSans-ThinItalic'),
-      url('/fonts/azo-sans/AzoSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-ThinItalic.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-ThinItalic.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-ThinItalic.ttf') format('truetype');
+  src:
+    local('Azo Sans Thin Italic'),
+    local('AzoSans-ThinItalic'),
+    url('/fonts/azo-sans/AzoSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-ThinItalic.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-ThinItalic.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -71,11 +80,13 @@
 @font-face {
   font-family: 'Azo Sans';
   src: url('/fonts/azo-sans/AzoSans-Regular.eot');
-  src: local('Azo Sans Regular'), local('AzoSans-Regular'),
-      url('/fonts/azo-sans/AzoSans-Regular.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-Regular.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-Regular.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-Regular.ttf') format('truetype');
+  src:
+    local('Azo Sans Regular'),
+    local('AzoSans-Regular'),
+    url('/fonts/azo-sans/AzoSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-Regular.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-Regular.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -84,11 +95,13 @@
 @font-face {
   font-family: 'Azo Sans Md';
   src: url('/fonts/azo-sans/AzoSans-MediumItalic.eot');
-  src: local('Azo Sans Medium Italic'), local('AzoSans-MediumItalic'),
-      url('/fonts/azo-sans/AzoSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-MediumItalic.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-MediumItalic.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-MediumItalic.ttf') format('truetype');
+  src:
+    local('Azo Sans Medium Italic'),
+    local('AzoSans-MediumItalic'),
+    url('/fonts/azo-sans/AzoSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-MediumItalic.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-MediumItalic.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -97,11 +110,13 @@
 @font-face {
   font-family: 'Azo Sans Bk';
   src: url('/fonts/azo-sans/AzoSans-Black.eot');
-  src: local('Azo Sans Black'), local('AzoSans-Black'),
-      url('/fonts/azo-sans/AzoSans-Black.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-Black.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-Black.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-Black.ttf') format('truetype');
+  src:
+    local('Azo Sans Black'),
+    local('AzoSans-Black'),
+    url('/fonts/azo-sans/AzoSans-Black.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-Black.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-Black.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -110,11 +125,13 @@
 @font-face {
   font-family: 'Azo Sans Md';
   src: url('/fonts/azo-sans/AzoSans-Medium.eot');
-  src: local('Azo Sans Medium'), local('AzoSans-Medium'),
-      url('/fonts/azo-sans/AzoSans-Medium.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-Medium.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-Medium.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-Medium.ttf') format('truetype');
+  src:
+    local('Azo Sans Medium'),
+    local('AzoSans-Medium'),
+    url('/fonts/azo-sans/AzoSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-Medium.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-Medium.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -123,11 +140,13 @@
 @font-face {
   font-family: 'Azo Sans Bk';
   src: url('/fonts/azo-sans/AzoSans-BlackItalic.eot');
-  src: local('Azo Sans Black Italic'), local('AzoSans-BlackItalic'),
-      url('/fonts/azo-sans/AzoSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-BlackItalic.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-BlackItalic.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-BlackItalic.ttf') format('truetype');
+  src:
+    local('Azo Sans Black Italic'),
+    local('AzoSans-BlackItalic'),
+    url('/fonts/azo-sans/AzoSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-BlackItalic.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-BlackItalic.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -136,11 +155,13 @@
 @font-face {
   font-family: 'Azo Sans Lt';
   src: url('/fonts/azo-sans/AzoSans-Light.eot');
-  src: local('Azo Sans Light'), local('AzoSans-Light'),
-      url('/fonts/azo-sans/AzoSans-Light.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-Light.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-Light.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-Light.ttf') format('truetype');
+  src:
+    local('Azo Sans Light'),
+    local('AzoSans-Light'),
+    url('/fonts/azo-sans/AzoSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-Light.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-Light.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -149,11 +170,13 @@
 @font-face {
   font-family: 'Azo Sans';
   src: url('/fonts/azo-sans/AzoSans-Italic.eot');
-  src: local('Azo Sans Italic'), local('AzoSans-Italic'),
-      url('/fonts/azo-sans/AzoSans-Italic.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-Italic.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-Italic.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-Italic.ttf') format('truetype');
+  src:
+    local('Azo Sans Italic'),
+    local('AzoSans-Italic'),
+    url('/fonts/azo-sans/AzoSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-Italic.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-Italic.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -162,11 +185,13 @@
 @font-face {
   font-family: 'Azo Sans';
   src: url('/fonts/azo-sans/AzoSans-Bold.eot');
-  src: local('Azo Sans Bold'), local('AzoSans-Bold'),
-      url('/fonts/azo-sans/AzoSans-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/azo-sans/AzoSans-Bold.woff2') format('woff2'),
-      url('/fonts/azo-sans/AzoSans-Bold.woff') format('woff'),
-      url('/fonts/azo-sans/AzoSans-Bold.ttf') format('truetype');
+  src:
+    local('Azo Sans Bold'),
+    local('AzoSans-Bold'),
+    url('/fonts/azo-sans/AzoSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/azo-sans/AzoSans-Bold.woff2') format('woff2'),
+    url('/fonts/azo-sans/AzoSans-Bold.woff') format('woff'),
+    url('/fonts/azo-sans/AzoSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -182,7 +207,12 @@ body {
   padding: 0;
   text-align: left;
   background: #000;
-  background: linear-gradient(0deg, rgba(0,0,0,100%) 0%, rgba(72,96,101,100%) 67%, rgba(47,110,122,100%) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 100%) 0%,
+    rgba(72, 96, 101, 100%) 67%,
+    rgba(47, 110, 122, 100%) 100%
+  );
   background-attachment: fixed;
   height: 100vh;
   word-wrap: break-word;

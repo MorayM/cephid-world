@@ -1,5 +1,5 @@
 ---
-title: 'So what''s it all about?'
+title: "So what's it all about?"
 description: 'A little bit about the musical and thematic inspirations for Cephid and Sparks in the Darkness'
 pubDate: 'Feb 23 2024'
 heroImage: '/moray-crystal-16-9.png'

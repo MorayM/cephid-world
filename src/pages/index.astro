@@ -1,15 +1,18 @@
 ---
-import { Image } from 'astro:assets';
-import Layout from '../layouts/Brochure.astro';
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Brochure.astro'
 
-import cover from '../images/sitd-cover.png';
-import MailchimpSignup from '../components/MailchimpSignup.astro';
-import OrderBanner from '../components/OrderBanner.astro';
-import TerminusVideo from '../components/videos/Terminus.astro';
-import WorldsBeforeVideo from '../components/videos/WorldsBefore.astro';
+import cover from '../images/sitd-cover.png'
+import MailchimpSignup from '../components/MailchimpSignup.astro'
+import OrderBanner from '../components/OrderBanner.astro'
+import TerminusVideo from '../components/videos/Terminus.astro'
+import WorldsBeforeVideo from '../components/videos/WorldsBefore.astro'
 ---
 
-<Layout title='Cephid - Electronic and Progressive Music' description='A new electronic and progressive music project. Debut album Sparks in the Darkness is out now!'>
+<Layout
+  title="Cephid - Electronic and Progressive Music"
+  description="A new electronic and progressive music project. Debut album Sparks in the Darkness is out now!"
+>
   <!-- Eager loading so as not to delay LCP -->
   <Image
     src={cover}
@@ -18,7 +21,9 @@ import WorldsBeforeVideo from '../components/videos/WorldsBefore.astro';
     width={800}
   />
   <p>
-    Cephid is a new electronic and progressive music project. Their debut album <i>Sparks in the Darkness</i> is out now. Find out more about the project <a href="/about">here.</a>
+    Cephid is a new electronic and progressive music project. Their debut album <i
+      >Sparks in the Darkness</i
+    > is out now. Find out more about the project <a href="/about">here.</a>
   </p>
   <OrderBanner />
   <p>Subscribe to the mailing list for more news, or follow the project on social media!</p>

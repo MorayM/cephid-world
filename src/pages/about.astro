@@ -1,29 +1,34 @@
 ---
-import { Image } from 'astro:assets';
-import Layout from '../layouts/Brochure.astro';
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Brochure.astro'
 
-import cover from '../images/sitd-cover.png';
-import crystal from '../images/moray-crystal.png';
-import PreorderBanner from '../components/OrderBanner.astro';
+import cover from '../images/sitd-cover.png'
+import crystal from '../images/moray-crystal.png'
+import PreorderBanner from '../components/OrderBanner.astro'
 ---
 
-<Layout title='About Cephid' description='Cephid EPK. The themes and inspirations behind Cephid and Sparks in the Darkness. Full credits and links to press quotes for press kits.' image="/moray-crystal-512.png">
+<Layout
+  title="About Cephid"
+  description="Cephid EPK. The themes and inspirations behind Cephid and Sparks in the Darkness. Full credits and links to press quotes for press kits."
+  image="/moray-crystal-512.png"
+>
   <Image src={crystal} alt="Moray Macdonald, imprisoned in a glowing glass crystal" />
   <h2>About Cephid</h2>
   <p>
     The culmination of many years of work, Cephid's debut album Sparks in the Darkness is an
-    expansive achievement. Inspired by our changing world and its uncertain futures, Sparks
-    in the Darkness lives in hope that a more sustainable world is still possible. Musically,
-    it is defined by a resistance to characterisation, instead expressing itself through
-    memorable melodies and complex structures, combined with deep, intense electronic textures.
+    expansive achievement. Inspired by our changing world and its uncertain futures, Sparks in the
+    Darkness lives in hope that a more sustainable world is still possible. Musically, it is defined
+    by a resistance to characterisation, instead expressing itself through memorable melodies and
+    complex structures, combined with deep, intense electronic textures.
   </p>
-  <blockquote>
-    The afterimage of even the brightest spark will eventually fade
-  </blockquote>
+  <blockquote>The afterimage of even the brightest spark will eventually fade</blockquote>
   <p>
-    The Cephid alter ego was created by musician and composer <a href="https://moraymacdonald.com" target="_blank" rel="noreferrer">Moray Macdonald</a> as an opportunity to bring his
-    diverse influences together into a single coherent artistic statement. From his live work
-    with artists from across the modern progressive scene to his early love of experimental
+    The Cephid alter ego was created by musician and composer <a
+      href="https://moraymacdonald.com"
+      target="_blank"
+      rel="noreferrer">Moray Macdonald</a
+    > as an opportunity to bring his diverse influences together into a single coherent artistic statement.
+    From his live work with artists from across the modern progressive scene to his early love of experimental
     electronic music, many musical facets are represented here.
   </p>
 
@@ -33,9 +38,7 @@ import PreorderBanner from '../components/OrderBanner.astro';
     workouts and moody, groove-driven soundscapes, all packed with lasting melodic hooks. The result
     is a fresh, intriguing and engaging record unlike any other on any scene today.
   </p>
-  <blockquote>
-    Sometimes a brighter light will overtake it
-  </blockquote>
+  <blockquote>Sometimes a brighter light will overtake it</blockquote>
   <p>
     Helping to bring the album to life are drummers Emily Dolan Davies (Bryan Ferry, The Darkness,
     Kim Wilde)and Graham Brown (The Paradox Twin, Grace and Fire, Cairo) who each bring their own
@@ -45,15 +48,17 @@ import PreorderBanner from '../components/OrderBanner.astro';
     Jerry Kandiah (Killing Joke, The Futureheads) from Old Street Studios on mixing and mastering
     duties respectively. The spectacular cover art is by Tiago Marinho (Muse).
   </p>
-  <blockquote>
-    Did we burn bright enough? Did we catch the eye of heaven?
-  </blockquote>
+  <blockquote>Did we burn bright enough? Did we catch the eye of heaven?</blockquote>
   <p>
-    <a href="https://moraymacdonald.com/">Moray Macdonald</a> is a musician and composer from Wiltshire. He made his name touring with
-    progressive rock and metal artists such as That Joe Payne, Godsticks, Kim Seviour and Ghost
-    Community. As well as creating music for film, theatre and art installations, he has also
-    produced a plethora of releases under his own name across the broad genre that is electronica,
-    which can be found on <a href="https://moraymacdonald.bandcamp.com/" target="_blank" rel="noreferrer">BandCamp</a> and all streaming sites.
+    <a href="https://moraymacdonald.com/">Moray Macdonald</a> is a musician and composer from Wiltshire.
+    He made his name touring with progressive rock and metal artists such as That Joe Payne, Godsticks,
+    Kim Seviour and Ghost Community. As well as creating music for film, theatre and art installations,
+    he has also produced a plethora of releases under his own name across the broad genre that is electronica,
+    which can be found on <a
+      href="https://moraymacdonald.bandcamp.com/"
+      target="_blank"
+      rel="noreferrer">BandCamp</a
+    > and all streaming sites.
   </p>
 
   <h3>For fans of</h3>
@@ -79,17 +84,13 @@ import PreorderBanner from '../components/OrderBanner.astro';
   <h3>Credits</h3>
   <p>All tracks written and performed by Moray Macdonald</p>
   <p>
-    With Graham Brown - drums (tracks 3 & 7), Emily Dolan Davies - drums (tracks 4, 6 & 8),
-    Angel Wolf-Black - vocals (track 3)
+    With Graham Brown - drums (tracks 3 & 7), Emily Dolan Davies - drums (tracks 4, 6 & 8), Angel
+    Wolf-Black - vocals (track 3)
   </p>
 
   <p>Mixed by Shelby Logan Warne and mastered by Jerry Kandiah at Old Street Studios</p>
   <p>Produced by Moray Macdonald</p>
   <p>Cover art by Tiago Marinho, Design by Alec Carmichael</p>
   <PreorderBanner />
-  <Image
-    src={cover}
-    alt="The cover for Sparks in the Darkness by Cephid"
-    width={800}
-  />
+  <Image src={cover} alt="The cover for Sparks in the Darkness by Cephid" width={800} />
 </Layout>

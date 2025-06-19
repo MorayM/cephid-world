@@ -1,9 +1,9 @@
 ---
-import MailchimpSignup from '../components/MailchimpSignup.astro';
-import Layout from '../layouts/Brochure.astro';
+import MailchimpSignup from '../components/MailchimpSignup.astro'
+import Layout from '../layouts/Brochure.astro'
 ---
 
-<Layout title="Contact" description='Contact Cephid'>
+<Layout title="Contact" description="Contact Cephid">
   <h1>Contact Cephid</h1>
   <form
     name="contact"
@@ -16,7 +16,9 @@ import Layout from '../layouts/Brochure.astro';
     <div>
       <div>
         <p hidden>
-          <label for="botField">Do not fill this out: <input id="botField" name="bot-field" /></label>
+          <label for="botField"
+            >Do not fill this out: <input id="botField" name="bot-field" /></label
+          >
         </p>
         <p>
           <label for="name">Your Name: <input id="name" type="text" name="name" /></label>
@@ -25,7 +27,9 @@ import Layout from '../layouts/Brochure.astro';
           <label for="email">Your Email: <input id="email" type="email" name="email" /></label>
         </p>
         <p>
-          <label for="message">Message: <textarea id="message" name="message" rows="5"></textarea></label>
+          <label for="message"
+            >Message: <textarea id="message" name="message" rows="5"></textarea></label
+          >
         </p>
         <p>
           <button type="submit">Send</button>
@@ -38,7 +42,8 @@ import Layout from '../layouts/Brochure.astro';
 </Layout>
 
 <style>
-  input, textarea {
+  input,
+  textarea {
     width: calc(100% - 2rem);
     background-color: transparent;
     border: 4px solid white;

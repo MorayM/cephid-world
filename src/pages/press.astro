@@ -1,17 +1,21 @@
 ---
-import { Image } from 'astro:assets';
-import Layout from '../layouts/Brochure.astro';
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Brochure.astro'
 
-import cover from '../images/sitd-cover.png';
-import OrderBanner from '../components/OrderBanner.astro';
+import cover from '../images/sitd-cover.png'
+import OrderBanner from '../components/OrderBanner.astro'
 ---
 
-<Layout title='Press quotes' description='Press quotes about Cephid and Sparks in the Darkness' image="/cover-512.png">
+<Layout
+  title="Press quotes"
+  description="Press quotes about Cephid and Sparks in the Darkness"
+  image="/cover-512.png"
+>
   <h2>Press quotes</h2>
   <h3>Orchestral Manoeuvres in the Dark</h3>
   <blockquote>
-    Really enjoyed listening to the debut release from Cephid. Great synth sounds and a really
-    good video. An artist to watch! - Andy
+    Really enjoyed listening to the debut release from Cephid. Great synth sounds and a really good
+    video. An artist to watch! - Andy
   </blockquote>
   <h3>Prog Magazine</h3>
   <blockquote>
@@ -25,21 +29,22 @@ import OrderBanner from '../components/OrderBanner.astro';
     This is an assured and enjoyable debut from a multi-talented performer at the top of his game,
     and so far, this is one of the best albums I’ve heard this year.
   </blockquote>
-  <a href="https://theprogressiveaspect.net/blog/2024/05/01/cephid-sparks-in-the-darkness/">Full review</a>
+  <a href="https://theprogressiveaspect.net/blog/2024/05/01/cephid-sparks-in-the-darkness/"
+    >Full review</a
+  >
   <h3>The Prog Mind</h3>
   <blockquote>
-    This album is both easy to describe and impossible to label... I’ll venture to say that
-    Cephid’s debut is one of the best albums of 2024 thus far. It is equal parts fun and
-    meaningful, thrilling and ponderous. It has a tremendous sense of pacing, balance, and flow;
-    and just when you thought all Moray’s tricks had been used, he brings out another one.
-    I love this album, and I hope it finds an audience.
+    This album is both easy to describe and impossible to label... I’ll venture to say that Cephid’s
+    debut is one of the best albums of 2024 thus far. It is equal parts fun and meaningful,
+    thrilling and ponderous. It has a tremendous sense of pacing, balance, and flow; and just when
+    you thought all Moray’s tricks had been used, he brings out another one. I love this album, and
+    I hope it finds an audience.
   </blockquote>
   <a href="https://theprogmind.com/2024/02/26/cephid-sparks-in-the-darkness/">Full review</a>
   <h4>The Prog Mind Awards 2024</h4>
   <ul>
     <li>
-      Top Keyboard Performance #2
-      "<em>Sparks in the Darkness</em> will leave you breathless at times,
+      Top Keyboard Performance #2 "<em>Sparks in the Darkness</em> will leave you breathless at times,
       and hovering in ambient hope in others"
     </li>
     <li>Top Songs #46 - Terminus</li>
@@ -50,11 +55,10 @@ import OrderBanner from '../components/OrderBanner.astro';
     It has the concept album quality in which you must indulge in it completely... it flows in one
     radical and unique package, impossible to pigeonhole... it’s too groundbreaking to be ignored.
   </blockquote>
-  <a href="https://devizine.com/2023/12/09/sparks-in-the-darkness-cephid-takes-electronica-to-new-dimensions/">Full review</a>
+  <a
+    href="https://devizine.com/2023/12/09/sparks-in-the-darkness-cephid-takes-electronica-to-new-dimensions/"
+    >Full review</a
+  >
   <OrderBanner />
-  <Image
-    src={cover}
-    alt="The cover for Sparks in the Darkness by Cephid"
-    width={800}
-  />
+  <Image src={cover} alt="The cover for Sparks in the Darkness by Cephid" width={800} />
 </Layout>
