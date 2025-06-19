@@ -17,5 +17,50 @@ type Props = { title?: string; description?: string; image?: string }
       <slot />
     </main>
     <Footer />
+
+    <script>
+      // Scroll-triggered animations
+      document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px',
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view')
+            }
+          })
+        }, observerOptions)
+
+        // Observe elements that should animate on scroll
+        const animateOnScroll = document.querySelectorAll('img, iframe, blockquote, ol, ul')
+        animateOnScroll.forEach((el) => {
+          el.classList.add('scroll-animate')
+          observer.observe(el)
+        })
+
+        // Add staggered animation to navigation links
+        const navLinks = document.querySelectorAll('nav .internal-links a')
+        navLinks.forEach((link, index) => {
+          ;(link as HTMLElement).style.animationDelay = `${index * 0.1}s`
+          link.classList.add('animate-slide-left')
+        })
+
+        // Enhanced loading animation for iframes
+        const iframes = document.querySelectorAll('iframe')
+        iframes.forEach((iframe) => {
+          iframe.classList.add('shimmer')
+
+          iframe.addEventListener('load', function () {
+            setTimeout(() => {
+              iframe.classList.remove('shimmer')
+              iframe.classList.add('animate-fade-in')
+            }, 300)
+          })
+        })
+      })
+    </script>
   </body>
 </html>

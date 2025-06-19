@@ -80,6 +80,11 @@
   .optionalParent {
     margin-block-start: 1rem;
   }
+
+  #mc_embed_signup {
+    animation: fadeIn 0.8s var(--animation-easing) 0.6s both;
+  }
+
   input[type='email'] {
     width: calc(100% - 2rem);
     background-color: transparent;
@@ -89,7 +94,23 @@
     border-radius: 1.5rem;
     color: white;
     font-family: 'Azo Sans', sans-serif;
+    transition: all var(--animation-duration) var(--animation-easing);
   }
+
+  input[type='email']:focus {
+    transform: scale(1.02);
+    border-color: var(--accent);
+    box-shadow:
+      0 0 0 2px rgba(255, 0, 0, 0.3),
+      0 4px 12px rgba(255, 0, 0, 0.2);
+    outline: none;
+  }
+
+  input[type='email']:hover {
+    border-color: var(--accent-dark);
+    transform: translateY(-2px);
+  }
+
   input[type='submit'] {
     padding-inline: 2rem;
     padding-block: 1rem;
@@ -99,12 +120,31 @@
     color: white;
     font-family: 'Azo Sans', sans-serif;
     font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--animation-duration) var(--animation-easing);
   }
+
   input[type='submit']:hover {
     background-color: var(--accent-dark);
-    cursor: pointer;
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(var(--accent-dark), 0.4);
   }
+
+  input[type='submit']:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(var(--accent-dark), 0.4);
+  }
+
   #mc_embed_shell {
     margin-block-end: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: 500;
+    animation: slideInLeft 0.6s var(--animation-easing) 0.7s both;
   }
 </style>

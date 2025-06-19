@@ -15,6 +15,75 @@
   --box-shadow:
     0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
     0 16px 32px rgba(var(--gray), 33%);
+  
+  /* Animation variables */
+  --animation-duration: 0.3s;
+  --animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Animation utility classes */
+.animate-fade-in {
+  animation: fadeIn 0.6s var(--animation-easing) forwards;
+}
+
+.animate-slide-left {
+  animation: slideInLeft 0.5s var(--animation-easing) forwards;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @font-face {
@@ -199,6 +268,7 @@
 
 html {
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -219,6 +289,7 @@ body {
   overflow-wrap: break-word;
   color: white;
   line-height: 1.5;
+  animation: fadeIn 0.8s var(--animation-easing);
 }
 
 main {
@@ -228,19 +299,25 @@ main {
   margin: auto;
   padding: 3rem 1rem;
   line-height: 1.7rem;
-  /* overflow-y: scroll; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  transition: color var(--animation-duration) var(--animation-easing);
 }
 
 h1 {
   font-size: 3.052em;
+  animation: slideInLeft 0.8s var(--animation-easing);
 }
 
 h2 {
   font-size: 2.441em;
+  animation: slideInLeft 0.6s var(--animation-easing) 0.1s both;
 }
 
 h3 {
   font-size: 1.953em;
+  animation: slideInLeft 0.5s var(--animation-easing) 0.2s both;
 }
 
 h4 {
@@ -258,6 +335,7 @@ b {
 
 a {
   color: var(--white);
+  transition: color var(--animation-duration) var(--animation-easing);
 }
 
 a:hover {
@@ -266,10 +344,20 @@ a:hover {
 
 p {
   margin-bottom: 1em;
+  animation: fadeIn 0.6s var(--animation-easing) 0.3s both;
 }
 
 .prose p {
   margin-bottom: 2em;
+}
+
+textarea, input {
+  transition: all var(--animation-duration) var(--animation-easing);
+}
+
+textarea:focus, input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 2px var(--accent);
 }
 
 textarea {
@@ -289,17 +377,33 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform var(--animation-duration) var(--animation-easing);
+  animation: fadeIn 0.8s var(--animation-easing) 0.4s both;
+}
+
+img:hover {
+  transform: scale(1.02);
 }
 
 code {
   padding: 2px 5px;
   background-color: rgb(var(--gray-light));
   border-radius: 2px;
+  transition: background-color var(--animation-duration) var(--animation-easing);
+}
+
+code:hover {
+  background-color: rgb(var(--gray));
 }
 
 pre {
   padding: 1.5em;
   border-radius: 8px;
+  transition: transform var(--animation-duration) var(--animation-easing);
+}
+
+pre:hover {
+  transform: translateY(-2px);
 }
 
 pre > code {
@@ -314,20 +418,92 @@ blockquote {
   margin: 0;
   font-size: 1rem;
   font-style: italic;
+  animation: slideInRight 0.7s var(--animation-easing) 0.5s both;
+  transition: transform var(--animation-duration) var(--animation-easing);
+}
+
+blockquote:hover {
+  transform: translateX(5px);
 }
 
 hr {
   border: none;
   border-top: 1px solid rgb(var(--gray-light));
+  transition: border-color var(--animation-duration) var(--animation-easing);
+}
+
+hr:hover {
+  border-color: var(--accent);
 }
 
 iframe {
   width: 100%;
+  border-radius: 12px;
+  transition: transform var(--animation-duration) var(--animation-easing);
+  animation: fadeIn 0.6s var(--animation-easing) 0.6s both;
 }
+
+iframe:hover {
+  transform: scale(1.01);
+}
+
+/* Lists with staggered animations */
+ol, ul {
+  animation: fadeIn 0.6s var(--animation-easing) 0.4s both;
+}
+
+ol li, ul li {
+  opacity: 0;
+  animation: slideInLeft 0.5s var(--animation-easing) forwards;
+}
+
+ol li:nth-child(1), ul li:nth-child(1) { animation-delay: 0.1s; }
+ol li:nth-child(2), ul li:nth-child(2) { animation-delay: 0.2s; }
+ol li:nth-child(3), ul li:nth-child(3) { animation-delay: 0.3s; }
+ol li:nth-child(4), ul li:nth-child(4) { animation-delay: 0.4s; }
+ol li:nth-child(5), ul li:nth-child(5) { animation-delay: 0.5s; }
+ol li:nth-child(6), ul li:nth-child(6) { animation-delay: 0.6s; }
+ol li:nth-child(7), ul li:nth-child(7) { animation-delay: 0.7s; }
+ol li:nth-child(8), ul li:nth-child(8) { animation-delay: 0.8s; }
 
 .scrollable {
   height: calc(100vh - 3.5rem);
   overflow: scroll;
+}
+
+/* Scroll-triggered animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s var(--animation-easing);
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced hover effects for interactive elements */
+button, .button {
+  transition: all var(--animation-duration) var(--animation-easing);
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover, .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--accent), 0.3);
+}
+
+button:active, .button:active {
+  transform: translateY(0);
+}
+
+/* Shimmer effect for loading states */
+.shimmer {
+  background: linear-gradient(90deg, transparent 25%, rgba(255, 255, 255, 0.1) 50%, transparent 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
 }
 
 @media (max-width: 720px) {
@@ -337,6 +513,15 @@ iframe {
 
   main {
     padding: 1em;
+  }
+
+  /* Reduce animation intensity on mobile */
+  h1, h2, h3 {
+    animation-duration: 0.4s;
+  }
+  
+  img:hover, pre:hover {
+    transform: none;
   }
 }
 
@@ -348,16 +533,8 @@ iframe {
   height: 1px;
   width: 1px;
   overflow: hidden;
-
-  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
   clip: rect(1px 1px 1px 1px);
-
-  /* maybe deprecated but we need to support legacy browsers */
   clip: rect(1px, 1px, 1px, 1px);
-
-  /* modern browsers, clip-path works inwards from each corner */
   clip-path: inset(50%);
-
-  /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
 }
