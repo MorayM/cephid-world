@@ -13,10 +13,10 @@ import logo from '../images/CEPHID-logo.png'
       <HeaderLink href="/">Home</HeaderLink>
       <!-- <HeaderLink href="/#mailingList">Mailing List</HeaderLink> -->
       <!-- <HeaderLink href="/blog">Blog</HeaderLink> -->
-      <HeaderLink href="/buy">Buy</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
+      <HeaderLink href="/buy">Buy</HeaderLink>
       <HeaderLink href="/live">Live</HeaderLink>
-      <!-- <HeaderLink href="/laser-harp">Laser Harp</HeaderLink> -->
+      <HeaderLink href="/laser-harp">Laser Harp</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
     </div>
 
@@ -36,9 +36,10 @@ import logo from '../images/CEPHID-logo.png'
   <div class="mobile-menu">
     <div class="mobile-links">
       <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/buy">Buy</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
+      <HeaderLink href="/buy">Buy</HeaderLink>
       <HeaderLink href="/live">Live</HeaderLink>
+      <HeaderLink href="/laser-harp">Laser Harp</HeaderLink>
       <HeaderLink href="/contact">Contact</HeaderLink>
     </div>
     <div class="mobile-social">
@@ -200,18 +201,18 @@ import logo from '../images/CEPHID-logo.png'
   }
 
   .mobile-menu.active {
-    max-height: 20.5rem;
+    max-height: 24rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   }
 
   .mobile-links {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .mobile-links a {
-    padding: 0.75rem 0;
+    padding: 0.75rem 1rem;
     color: white;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -282,7 +283,7 @@ import logo from '../images/CEPHID-logo.png'
     }
   }
 
-  @media (max-width: 780px) {
+  @media (max-width: 940px) {
     .phone-hide {
       display: none;
     }
@@ -311,11 +312,8 @@ import logo from '../images/CEPHID-logo.png'
       justify-content: space-between;
       min-height: 3.5rem;
     }
-  }
-
-  @media (max-width: 500px) {
     .mobile-links a {
-      padding: 1rem 0;
+      padding: 1rem;
     }
   }
 </style>
