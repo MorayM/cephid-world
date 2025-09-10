@@ -33,6 +33,7 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date())
         {upcomingShows.map((show) => (
           <div class="show-item">
             <h4 class="show-location">{show.location}</h4>
+            {show.description && <p class="show-description">{show.description}</p>}
             <div>
               <span class="show-date">
                 {new Date(show.date).toLocaleDateString()} {show.time}
@@ -54,6 +55,7 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date())
       pastShows.map((show) => (
         <div class="show-item">
           <h4 class="show-location">{show.location}</h4>
+          {show.description && <p class="show-description">{show.description}</p>}
           <div>
             <span class="show-date">
               {new Date(show.date).toLocaleDateString()} {show.time}
@@ -92,7 +94,16 @@ const pastShows = shows.filter((show) => new Date(show.date) < new Date())
   .show-item h4 {
     margin: 0;
     line-height: 1em;
+    font-size: 1.2em;
   }
+
+  .show-description {
+    margin: 0.5em 0;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+  }
+
   .show-item div {
     display: flex;
     justify-content: space-between;
