@@ -1,10 +1,25 @@
 [
   {
+    "date": "2026-11-28",
+    "time": "19:00",
+    "url": "",
+    "location": "St Marys Church, Devizes, Wiltshire",
+    "description": "Full band show with Richard Antony Bean"
+  },
+  {
+    "date": "2026-08-01",
+    "time": "19:00",
+    "url": "",
+    "location": "The 1865, Southampton",
+    "description": "Full band show for the Solent Area Prog 10th Anniversary Festival"
+  },
+  {
     "date": "2026-03-06",
     "time": "19:00",
     "url": "https://www.universe.com/events/twelve-olympians-live-tickets-59PR67",
     "location": "St Mary's Church, Wedmore, Somerset",
     "description": "Solo appearance supporting Richard Antony Bean"
+  },
   {
     "date": "2025-09-20",
     "time": "19:00",
